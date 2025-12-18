@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/calcular.png" type="image/x-icon">
+    <title>Conversores de Medidas</title>
+</head>
+<body>
+    
+    <header>
+        <a href="ohmica.html">Conversor de Resistencia Ohmica</a>
+        <a href="index.html">Conversor de Resistencia de Isolação</a>
+        <a href="conversor.html">Conversor de Medidas Ohmicas</a>
+    </header>
+
+    <nav>
+        <h1>
+            Ferramenta de Correção de Resistência de Isolação para Temperatura Normativa!
+        </h1>
+        <p>
+            Converta facilmente suas medidas de Isolação para atender a norma.
+        </p>
+    </nav>
+
+
+    <section class="informacoes">
+        <h2>
+            Preencha os campos abaixo com os valores medidos e a temperatura ambiente no momento do ensaio.
+        </h2>
+        
+        <div id="alert"> 
+            <h2>
+                Alerta: O valor deve ser informado exclusivamente em ohms (Ω).
+                Não utilize unidades como megaohms (MΩ), gigaohms (GΩ), miliohms (mΩ) ou qualquer outra variação. <br>
+                Caso não saiba converter as medidas <a href="conversor.html">clique aqui.</a>
+            </h2>
+        </div>
+        <input type="number" id="temperatura" placeholder="Digite a temperatura ambiente em °C">
+        <input type="number" id="isolacao" placeholder="Digite o valor encontrado durante o ensaio em Ω">
+       
+
+        <button onclick="calcular()">Calcular</button>
+        <div>
+           <p id="saida">Seu resultado será exibido aqui</p> 
+        </div>
+        
+
+    </section>
+
+    <script src="Calcular.js"></script>
+
+</body>
+</html>

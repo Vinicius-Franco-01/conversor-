@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/calcular.png" type="image/x-icon">
+    <title>Conversores de Medidas</title>
+</head>
+<body>
+    
+    <header>
+        <a href="ohmica.html">Conversor de Resistencia Ohmica</a>
+        <a href="index.html">Conversor de Resistencia de Isolação</a>
+        <a href="conversor.html">Conversor de Medidas Ohmicas</a>
+    </header>
+
+    <nav>
+        <h1>
+            Ferramenta de Conversor de Unidades de Medidas Ohmicas!
+        </h1>
+        <p>
+            Converta facilmente suas Unidades de Medidas.
+        </p>
+    </nav>
+
+
+    <section class="informacoes">
+        <h2>
+            Preencha o campo abaixo com o valor a ser convertido.
+        </h2>
+        
+        <input type="number" id="valor" placeholder="Digite o valor a ser convertido">
+        <select name="unidades" id="unidades">
+            <option value="">Selecione sua Unidade de Medida</option>
+            <option value="G">Giga-Ohns (GΩ)</option>
+            <option value="M">Mega-Ohns (MΩ)</option>
+            <option value="O">Ohns (Ω)</option>
+            <option value="K">Kilo-Ohns (KΩ)</option>
+            <option value="N">Mili-Ohns (mΩ)</option>
+        </select>
+       
+        <button onclick="converter()">Calcular</button>
+        <div>
+           <p id="saida1">Seu resultado será exibido aqui</p> 
+           <p id="saida2"></p> 
+           <p id="saida3"></p> 
+           <p id="saida4"></p> 
+        </div>
+        
+
+    </section>
+
+    <script src="Converter.js"></script>
+
+</body>
+</html>
